@@ -1,3 +1,21 @@
+.container {
+  width: 20em;
+  margin-left: auto;
+  margin-right: auto;
+}
 .cross-off {
   text-decoration: line-through;
+}
+
+.back-img {
+  position: absolute;
+  z-index:-1;
+  opacity: .5;
+}
+.back-img img {
+  width: 100%;
+}
+.recipe {
+  color: #555;
+  font-size: .5em;
 }

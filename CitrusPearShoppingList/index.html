@@ -4,16 +4,21 @@
     </head>
     <body>
         <div id="app">
-          <h1>{{title}}</h1>
-          <div>
-            <input v-model="newItem" type="text" />
-            <button v-on:click="addItem">Add</button>
-          </div>
-          <div v-for="item in items">
-            <input type="checkbox" v-model="item.checked" @change="checkboxToggle(item)"/>
-            <span v-bind:class="{ 'cross-off': item.checked }">
-              {{item.name}}
-            </span>
+          <div class="container">
+            <div class='back-img'>
+              <img src="https://www.citruspeardinners.com/wp-content/uploads/2018/03/Citrus-Pear-Logo-295-295.jpg"/>
+            </div>
+            <h1>Shopping List</h1>
+            <div>
+              <input v-model="newItem" type="text" />
+              <button v-on:click="addItem">Add</button>
+            </div>
+            <div v-for="item in items">
+              <input type="checkbox" v-model="item.checked" @change="checkboxToggle(item)"/>
+              <span v-bind:class="{ 'cross-off': item.checked }">
+                {{item.name}}<span class="recipe"> {{item.recipe}}</span>
+              </span>
+            </div>
           </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
