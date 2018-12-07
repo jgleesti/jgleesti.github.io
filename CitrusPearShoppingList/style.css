@@ -2,6 +2,7 @@
   width: 20em;
   margin-left: auto;
   margin-right: auto;
+  font-size: 3vmin;
 }
 .cross-off {
   text-decoration: line-through;
@@ -17,5 +18,5 @@
 }
 .recipe {
   color: #555;
-  font-size: .5em;
+  font-size: 1.5vmin;
 }
