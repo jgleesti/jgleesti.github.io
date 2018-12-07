@@ -2,16 +2,28 @@
   width: 20em;
   margin-left: auto;
   margin-right: auto;
-  font-size: 3vmin;
+  font-size: 5vmin;
+  line-height: 6vmin;
+}
+input, button {
+  font-size: 5vmin;
+}
+input[type='checkbox'] {
+  height: 5vmin;
+  width: 5vmin;
+  vertical-align: sub;
 }
 .cross-off {
   text-decoration: line-through;
 }
 
 .back-img {
-  position: absolute;
+  position: fixed;
   z-index:-1;
   opacity: .5;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .back-img img {
   width: 100%;
@@ -19,4 +31,8 @@
 .recipe {
   color: #555;
   font-size: 1.5vmin;
+}
+h1 {
+  text-align: center;
+  margin: 50 0;
 }
